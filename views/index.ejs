@@ -1,0 +1,147 @@
+<%include ./partials/header.ejs%>
+
+<%include ./partials/navbar.ejs%>
+
+<title>Keith Franklin - Home</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/slider.css">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+  	<script type="text/javascript" src="http://www.goat1000.com/tagcanvas.min.js?2.9"></script>
+
+<main id="internal-content">
+	<div class="fullScreenPage" id="page1">
+		<div class="row">
+		<div class="col-md-3 col-xs-12" id="prof-img"> 
+			<img src="img/main.jpg"  alt="http://placehold.it/350x350" class="img-circle" style="width:150px;height:150px;margin-top: -77px">
+		</div>	
+		</div>
+		<h1 style="margin-bottom: 0px;margin-top: 10px; font-weight: 600; font-size: 2em">Keith Franklin Jathanna</h1>
+		<h2> some crap about me for two lines</h2>
+		<div class="row">
+			<div class="col-md-12">
+			<div class="col-md-1" onclick="next();" style="padding-top: 10%;"> <i class="fa fa-angle-down nav-button" aria-hidden="true"></i></div>
+				<div id="myCanvasContainer"> 
+					<canvas class=" col-md-offset-2 col-xs-12 col-md-6" width="800" height="600" id="myCanvas" > 
+
+						<p>
+							Anything in here will be replaced on browsers that support the canvas element
+						</p>
+						<ul>
+							<li><a href="#" target="_blank">Node.JS</a></li> 
+							<li><a href="#">HTML</a></li> 
+							<li><a href="#">CSS</a></li> 
+							<li><a href="#">JavaScript</a></li> 
+							<li><a href="#">JQuery</a></li>
+							<li><a href="#">Angular</a></li>
+							<li><a href="#">R</a></li>
+							<li><a href="#">ChartJS</a></li>
+						</ul> 
+					</canvas> 
+				</div>	
+			</div>
+		</div>
+	</div>	
+	<div class="fullScreenPage" id="page2">
+		<div class="row">
+			<div class="col-md-12">
+				<h1 style="margin-top: 1em">Projects Worked On</h1>
+				<div class="col-md-1">
+					<div  onclick="prev();" > <i class="nav-button fa fa-angle-up" aria-hidden="true"></i></div> 	
+					<div  onclick="next();" > <i class="nav-button fa fa-angle-down" aria-hidden="true"></i></div>
+				</div>
+				
+				<div class="col-md-3">
+				    <input type="radio" checked id="radio-front" name="select-face"/>    
+				    <input type="radio" id="radio-1" name="select-face"/>
+				    <input type="radio" id="radio-2" name="select-face"/>
+				    <input type="radio" id="radio-3" name="select-face"/>
+				    <input type="radio" id="radio-4" name="select-face"/>
+				    <input type="radio" id="radio-5" name="select-face"/>
+					<div class="separator"></div>
+					<div class="space3d">
+					    <div class="_3dbox">
+					      <div class="_3dface _3dface--front"></div>
+					      <div class="_3dface _3dface--top"></div>
+					      <div class="_3dface _3dface--bottom"></div>
+					      <div class="_3dface _3dface--left"></div>
+					      <div class="_3dface _3dface--right"></div>
+					      <div class="_3dface _3dface--back"></div>
+					    </div>
+					</div>
+					<div class="separator"></div>				
+				</div>		  
+				<div class="col-md-8">
+					<p class="project-description">
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+						tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+						quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+						consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+						cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+						proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					</p>
+				</div>  
+				
+			</div>
+		</div>
+	</div>
+	<div class="fullScreenPage" id="page3">
+		<div class="row">
+			<section id="skill" class="sec col-md-12">
+				<div class="row">
+					<h1 class="text-center" style="margin-top: 1em; margin-bottom: 1em"> Computer Science Skills</h1>
+					<div class="col-md-1" >
+						<div  onclick="prev();" >
+						 <i class="fa fa-angle-up nav-button" aria-hidden="true"></i>
+						</div>
+					 </div>
+					<div class="container1 col-md-5 col-xs-12" style="float:left;">
+		 				<h2>Technicals skills(40 is proficient)</h2>
+		  				<div>
+		    				<canvas id="skills" class="reveal1" width="250" height="250"></canvas>
+		    				<div id="js-legend" class="chart-legend">Out of 40</div>
+						</div>
+					</div>
+					<div class="container1 col-md-5 col-xs-12" style="float:left;">
+		 				<h2>Still learning(20 is done)</h2>
+		  				<div>
+		    				<canvas id="skills2" class="reveal1"  width="250" height="250"></canvas>
+		    				<div id="js-legend2" class="chart-legend" >Out of 40</div>
+						</div>
+					</div>
+				</div>	
+			</section>
+
+		</div>
+		<div class="row" style="background: black; color: white; padding: 2em;margin-top: 6em">
+			
+				<div class="Reach">
+					Reach me on : 
+					<br>
+					<br>
+					<br>
+					<span style="font-size: .5em; margin-left: 10px;">designed and developed by Keith Franklin</span>
+				</div>
+
+					<div class="circle-button-lists">
+						<div class="circle-button">
+							<i class="fa fa-facebook" aria-hidden="true"></i>
+						</div>
+						<div class="circle-button">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</div>
+						<div class="circle-button">
+							<i class="fa fa-instagram" aria-hidden="true"></i>
+						</div>
+						<div class="circle-button">
+							<i class="fa fa-phone" aria-hidden="true"></i>
+						</div>
+					</div>
+			</div>
+	</div>
+	</main>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/1.0.2/Chart.min.js"></script>
+	<script type="text/javascript" src="http://amondit.github.io/jquery.scrollsteps.js/jquery.scrollsteps-full-min.js"></script>
+	<script type="text/javascript" src="js/chart.js"></script>
+	<script type="text/javascript" src="js/step.js"></script>
+	<script src="js/main-script.js"></script>
+<%include ./partials/footer.ejs%>

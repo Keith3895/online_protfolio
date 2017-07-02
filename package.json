@@ -1,0 +1,15 @@
+{
+  "name": "portfolio-keith",
+  "version": "1.0.0",
+  "description": "A portfolio for keith franklin",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Keith Franklin",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.6",
+    "express": "^4.15.3"
+  }
+}

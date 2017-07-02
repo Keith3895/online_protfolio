@@ -1,0 +1,116 @@
+body{
+	background:black;
+}
+
+h1.name{
+	font-family: 'Tangerine', cursive;
+    color: black;
+    font-size: 5.6rem;
+    margin: 10px 0px 20px 0px;
+    font-weight: 700;
+}
+.sub-title{
+	font-style: italic;
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 1em;
+}
+
+
+.circle-button{
+	border-radius: 50%;
+	height: 3.2em;
+	width: 3.2em;
+	border: 3px solid black;
+}
+
+.fa{
+	padding: 6px;
+    font-weight: 100;
+    font-size: 2em;
+}
+
+.circle-text{
+	margin-top: 1.5em !important;
+    margin-left: -1px !important; 
+    font-weight: 500;
+    border-bottom: 3px solid black;
+    margin-right: 19px;
+}
+
+.circle-button-lists div{
+	float: left;
+	margin: 10px;
+	margin-right: 0px;
+}
+.circle-button-lists a{
+	/*margin-right: 2em;*/
+}
+
+.btn-cir{
+	width: 10%;
+}
+a{
+	color: black;
+	float: left;
+}
+hr.circle {
+	border:0px solid black;
+	border-top: 1px solid black;
+	text-align: center;
+
+}
+hr.circle:after {
+	content: '(((o)))';
+	display: inline-block;
+	position: relative;
+	top: -14px;
+	padding: 0 10px;
+	background: #f8e2b3;
+	color: black;
+	font-size: 18px;
+/* 	-webkit-transform: rotate(60deg);
+	-moz-transform: rotate(60deg);
+	transform: rotate(60deg); */
+}
+
+hr.sub {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+
+
+
+
+.card {
+    position: absolute;
+    transition: box-shadow .25s;
+    border-radius: 2px;
+    transform-style: preserve-3d;
+  	transition: transform 1s;
+  	
+}
+
+.card-content{
+	padding: 24px;
+    border-radius: 0 0 2px 2px;
+	position: absolute;
+}
+
+
+
+.card .front {
+	background-color: #f8e2b3 !important;
+  backface-visibility: hidden;
+}
+.card .back {
+	background-color: #f8e2b3 !important;
+	backface-visibility: hidden;
+  	transform: rotateY( 180deg );
+}
+.card.flipped {
+  transform: rotateY( 180deg );
+}
+
