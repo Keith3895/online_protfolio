@@ -27,6 +27,7 @@ app.get("*",function(req,res){
 	res.send("no");
 });
 
-app.listen(process.env.port || process.env.PORT ,function(a){
+// app.listen(process.env.port || process.env.PORT  ,function(a){
+app.listen(3000, '127.0.0.1',function(a){
     console.log("server started");
 });

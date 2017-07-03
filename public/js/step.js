@@ -21,8 +21,7 @@ var msIE = function(){
 		     console.log = function() {};
 		};
 
-
-		var currentPageIndex = 0;
+var currentPageIndex = 0;
 		var numberOfPages = 3;
 		var pageHeight = 800;
 		var currentSubPageIndex = 0;
@@ -83,6 +82,24 @@ var msIE = function(){
 				e.stopPropagation();
 			}
 		}
+
+		
+	$( document ).ready(function() {      
+    var is_mobile = false;
+
+    if( $('body').css('overflow')=='visible') {
+        is_mobile = true;       
+    }
+
+    // now i can use is_mobile to run javascript conditionally
+
+    if (is_mobile != true) {
+        //Conditional script here
+
+      
+
+
+		
 $( document ).ready(function() {
 			$("body").scrollsteps({
 				up: prev,
@@ -99,23 +116,10 @@ $( document ).ready(function() {
 			pageHeight = window.innerHeight;
 			$(".fullScreenPage").css("height",pageHeight);
 			pageScroll();
-		});
+		});  
 
-
-	$( document ).ready(function() {      
-    var is_mobile = false;
-
-    if( $('#some-element').css('display')=='none') {
-        is_mobile = true;       
-    }
-
-    // now i can use is_mobile to run javascript conditionally
-
-    if (is_mobile == true) {
-        //Conditional script here
-
-        
-
-        
+	console.log("not for phone");        
+    }else{
+    	$('.fullScreenPage').removeClass('fullScreenPage');
     }
  });

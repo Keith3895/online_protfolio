@@ -50,7 +50,7 @@ h1.name{
 .btn-cir{
 	width: 10%;
 }
-a{
+.card a{
 	color: black;
 	float: left;
 }
@@ -114,3 +114,20 @@ hr.sub {
   transform: rotateY( 180deg );
 }
 
+.last{
+	float:left;
+	margin-left: 10em;
+}
+@media only screen and (max-width: 760px) {
+
+	.last{
+		float:left;
+		margin-left: 0em;
+	}
+	.circle-button-lists div{
+		margin: 0px;
+	}
+	.row{
+		margin-top: 4em;
+	}
+}
