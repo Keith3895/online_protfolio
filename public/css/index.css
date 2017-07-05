@@ -108,4 +108,9 @@ p{
 	.chart-legend{
 		font-size: .7em;
 	}
+	#prof-img{
+		display: block;
+		z-index: 1;
+		margin-right: 0%;
+	}
 }

@@ -481,7 +481,7 @@ main.nav-is-visible {
     font-size: 3.6rem;
     margin: 2em auto;
   }
-  #page_id{
-    margin-left: 1px;
+  .cd-logo{
+    display: none;
   }
 }
