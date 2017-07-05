@@ -105,33 +105,33 @@
 }
 
 ._3dface--front {
-  background: url(../img/1.jpg);
-  background-size: 100%;
+  background: url(../img/mkb.jpg);
+  background-size: cover;
 }
 
 ._3dface--left {
-  background: url(../img/2.jpg);
-  background-size: auto 100%;
+  background: url(../img/festmamau.jpg);
+  background-size: cover;
 }
 
 ._3dface--right {
-  background: url(../img/3.jpg);
-  background-size: auto 100%;
+  background: url(../img/sureify.jpg);
+  background-size: cover;
 }
 
 ._3dface--top {
-  background: url(../img/4.jpg);
-  background-size: auto 100%;
+  background: url(../img/chat.jpg);
+  background-size: cover;
 }
 
 ._3dface--bottom {
-  background: url(../img/5.jpg);
-  background-size: auto 100%;
+  background: url(../img/project_pheno.jpg);
+  background-size: cover;
 }
 
 ._3dface--back {
-  background: url(../img/6.jpg);
-  background-size: auto 100%;
+  background: url(../img/keith.jpg);
+  background-size: cover;
 }
 
 @media only screen and (max-width: 760px) {

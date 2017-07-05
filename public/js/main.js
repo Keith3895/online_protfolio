@@ -1,6 +1,6 @@
 jQuery(document).ready(function($){
 	
-	// $('#page_id').html(window.location.href.split('/')[3]);
+	$('#page_id').html(window.location.href.split('/')[3]);
 	
 
 	switch(window.location.href.split('/')[3]){

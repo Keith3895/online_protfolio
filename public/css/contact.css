@@ -118,6 +118,9 @@ hr.sub {
 	float:left;
 	margin-left: 10em;
 }
+#rotate-key{
+	margin-left: 48%; 
+}
 @media only screen and (max-width: 760px) {
 
 	.last{

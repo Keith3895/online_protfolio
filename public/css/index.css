@@ -44,7 +44,10 @@ p{
 	float: left;
 	margin: 10px;
 }
-
+.circle-button-lists a:link,
+.circle-button-lists a:visited{
+	color: white;
+}
 .btn-cir{
 	width: 10%;
 }
@@ -69,7 +72,7 @@ p{
 	body{
 		transition: all 0.8s ease-in-out;
 		overflow: hidden;
-		background-color: #699b98;
+		background-color: #3e4242;
 	}
 
 
@@ -77,6 +80,13 @@ p{
 		height:100%;
 	}
 
+h2{
+	    font-size: 1.3em;
+    text-align: center;
+    margin-top: 1em;
+    color: white;
+    font-weight: 100;
+}
 
 
 .nav-button{
@@ -105,12 +115,16 @@ p{
 	body{
 		overflow: visible;
 	}
-	.chart-legend{
+	/*.chart-legend{
 		font-size: .7em;
-	}
+	}*/
 	#prof-img{
 		display: block;
 		z-index: 1;
 		margin-right: 0%;
+	}
+	.reveal{
+		width: 100%;
+		height: auto;
 	}
 }
