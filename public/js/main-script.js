@@ -55,24 +55,24 @@
 	    animationEasing : "easeOutBounce",
 	    });
 	    document.getElementById('js-legend2').innerHTML = skillsChart.generateLegend();
-
+	    $('.project-description').html("<h3> GradBunker </h3> <p>GradBunker provides rarefied modules such as the placement module, library module, result module etc. </p>");
 	$('#radio-front').on('click',function(){
-				$('.project-description').text("lorem ipsum 1");
+				$('.project-description').html("<h3> GradBunker </h3> <p>GradBunker provides rarefied modules such as the placement module, library module, result module etc. </p>");
 			});
 	$('#radio-1').on('click',function(){
-				$('.project-description').text("p!");
+				$('.project-description').html("<h3> FestMaMu </h3> <p>FestMaMu: An event service aggirgator website. </p>");
 			});
 	$('#radio-2').on('click',function(){
-				$('.project-description').text(" bla bla bla");
+				$('.project-description').html("<h3> Sureify </h3> <p>A webapp a audio streaming service with a simple player. </p>");
 			});
 	$('#radio-3').on('click',function(){
-				$('.project-description').text("asdf qwerty");
+				$('.project-description').html("<h3> Pheno_bot Read Up </h3> <p>A reading repositiory on all that is needed to build a chatbot.</p>");
 			});
 	$('#radio-4').on('click',function(){
-				$('.project-description').text("lorem ipsum for this part");
+				$('.project-description').html("<h3> Phenobot </h3> <p>A Chatbot for Event Management using Bot Framework and LUIS. </p>");
 			});
 	$('#radio-5').on('click',function(){
-				$('.project-description').text("lorem ipsum for this part 2");
+				$('.project-description').html("<h3> Keith Franklin : Resume </h3> <p>A online copy of my resume.</p>");
 			});
 		var interval = setInterval(function(){
 			$('#radio-2').click();
