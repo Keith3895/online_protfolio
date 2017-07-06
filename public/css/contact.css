@@ -1,5 +1,5 @@
 body{
-	background:black;
+	/*background:black;*/
 }
 
 h1.name{
@@ -124,6 +124,18 @@ hr.sub {
 @media only screen and (max-width: 760px) {
 
 	.last{
+		float:left;
+		margin-left: 0em;
+	}
+	.circle-button-lists div{
+		margin: 0px;
+	}
+	.row{
+		margin-top: 4em;
+	}
+}
+@media only screen and (max-width: 1024px) {
+.last{
 		float:left;
 		margin-left: 0em;
 	}
