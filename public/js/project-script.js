@@ -26,6 +26,12 @@ var projects=[{
 	link:"Grad-bunker"
 },
 {
+	Title: "Grad Bunker App",
+	Image: "./img/mkbApp.jpg",
+	Description:"This was an App developed on top of the pre-exsistng data models of the GradBunker website. The application was developed using the Ionic Framework. ",
+	link:"gradbunkerApp"
+},
+{
 	Title: "Sureify test",
 	Image: "./img/sureify.jpg",
 	Description:"This was a website developed for a compitition hosted by the website: hackerearth.com. The problem statment for this compitition was : 'Develop frontend for a music streaming service along with a player for said service. This website was made funtional using AngularJS 1.x. The styleing and the markup were written from scratch.'",

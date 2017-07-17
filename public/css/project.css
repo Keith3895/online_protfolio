@@ -28,7 +28,7 @@ body{
   	filter: 3px;
 }
 .bg__foo_full{
-	height: 100vh;
+	height: 120vh;
   	background-image: url(
 	    '../img/code.jpg'
 	  );	

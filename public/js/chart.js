@@ -17,6 +17,12 @@ $('#marks').on('inview', function(event, isInView) {
 
 
 var DoData = [
+    {
+
+      value : 28,
+      label: 'Ionic',
+      color: '#0dab33'
+   },
    {
       value: 10,
       label: 'Java',
@@ -53,15 +59,21 @@ var DoData = [
       color: '#9ba70d'
    },
    {
+
+      value : 35,
+      label: 'jQuery',
+      color: '#0dab31'
+   },
+   {
       value: 24,
       label: 'MONGO DB',
       color: '#811BD6'
    },
    {
 
-      value : 35,
-      label: 'jQuery',
-      color: '#0dab31'
+      value : 30,
+      label: 'Angular.js 1.x',
+      color: '#6eb57f'
    }
 ];
 var pieData = [
@@ -71,8 +83,8 @@ var pieData = [
       color: '#811BD9'
    },
    {
-      value: 5,
-      label: 'Angular.js (<5 yet to start)',
+      value: 10,
+      label: 'Angular 4',
       color: '#b2e128'
    },
    {
