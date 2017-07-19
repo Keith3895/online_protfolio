@@ -23,8 +23,11 @@ app.get("/About",function(req,res){
 app.get("/Contact",function(req,res){
 	res.render('contact');
 });
+app.get("/demo/Pheno-bot",function(req,res){
+	res.render('phenobot-readup');
+});
 app.get("*",function(req,res){
-	res.send("no");
+	res.redirect('/');
 });
 
 app.listen(process.env.port || process.env.PORT  ,function(a){
