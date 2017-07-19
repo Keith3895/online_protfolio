@@ -1,0 +1,56 @@
+<div ng-controller='activity'>
+	<h3>Favorites</h3>
+	<ul class="row">
+        <li ng-repeat="item in data | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+            <!-- {{item}} -->
+            <div class="card">
+                <div>
+                    <!-- <img src="" alt="Avatar" style="width:100%"> -->
+                    <div style="background: url('{{item.cover_image}}');width: 100%; background-size: cover;background-position: center;" class="back">
+                        <div class="play_hv">
+                            <div>
+                                <button id="playNow" class="playNow" ng-click="playNow(item.url)"></button>
+                                <a id ="downloadHv" class="dow1" href="{{item.url}}" download="filename.mp3" ng-click='down(item.url)'></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card-container">
+                <hr>
+                    <h4><b>Song : {{item.song}}</b></h4> 
+                    <hr>
+                    <p><strong>Atists:</strong> {{item.artists}}</p> 
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+    <h3>Downloads</h3>
+	<ul class="row">
+        <li ng-repeat="item in data1 | filter:q | startFrom:currentPage*pageSize | limitTo:pageSize">
+            <!-- {{item}} -->
+            <div class="card">
+                <div>
+                    <!-- <img src="" alt="Avatar" style="width:100%"> -->
+                    <div style="background: url('{{item.cover_image}}');width: 100%; background-size: cover;background-position: center;" class="back">
+                        <div class="play_hv">
+                            <div>
+                                <button id="playNow" class="playNow" ng-click="playNow(item.url)"></button>
+                                <a id ="downloadHv" class="dow1" href="{{item.url}}" download="filename.mp3" ng-click='down(item.url)'></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="card-container">
+                <hr>
+                    <h4><b>Song : {{item.song}}</b></h4> 
+                    <hr>
+                    <p><strong>Atists:</strong> {{item.artists}}</p> 
+                </div>
+                
+            </div>
+        </li>
+    </ul>
+</div>

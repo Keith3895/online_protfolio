@@ -26,6 +26,10 @@ app.get("/Contact",function(req,res){
 app.get("/demo/Pheno-bot",function(req,res){
 	res.render('phenobot-readup');
 });
+app.get("/demo/sureify",function(req,res){
+	res.render('surify');
+});
+
 app.get("*",function(req,res){
 	res.redirect('/');
 });

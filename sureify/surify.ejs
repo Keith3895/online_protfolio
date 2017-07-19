@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sureify — Coke Studio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+	<script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular-route.min.js'></script> 
+	<script src="js/angular-indexed-db.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body ng-app='coke-player' ng-controller= 'main'>
+<nav >
+	<ul>
+		<li>
+			<a href="#/">Home</a>
+		</li>
+		<li>
+			<a href="#/Profile">Profile Activity</a>
+		</li>
+		<li style="float: right;">
+			<div style="    padding: 0;
+    font-size: 34px;
+    color: white;
+    padding-right: 80px;">Sureify &#45; Coke Studio</div>
+		</li>
+	</ul>	
+</nav>
+
+
+
+
+<div ng-view></div>
+
+
+<audio id="music" preload="true">
+	<source>
+</audio>
+<div id="audioplayer" ng-controller= "player">
+	<button id="pButton" class="play"></button>
+	<div id="timeline">    
+		<div id="playhead"></div>
+	</div>
+	<div class="vol-cont">
+		<button  id ="vButton" class="high"></button>
+		<div id="volume">    
+			<div id="volumehead"></div>
+		</div>
+		<div id="val"></div>	
+	</div>
+	<button  id ="favButton" class="dislike" ng-click=favs()></button>
+	<a id ="download" class="dow" href="#" download="filename.mp3" ng-click='down($event)'></a>
+</div>
+
+<script type="text/javascript" src="js/player.js"></script>
+<script type="text/javascript" src="js/controller.js"></script>
+
+</body>
+</html>
