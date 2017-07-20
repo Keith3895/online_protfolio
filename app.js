@@ -23,6 +23,9 @@ app.get("/About",function(req,res){
 app.get("/Contact",function(req,res){
 	res.render('contact');
 });
+app.get("/Blog",function(req,res){
+	res.send("Due to payment issues with the account the page can't load.");
+});
 app.get("/demo/Pheno-bot",function(req,res){
 	res.render('phenobot-readup');
 });
@@ -34,7 +37,7 @@ app.get("*",function(req,res){
 	res.redirect('/');
 });
 
-app.listen(process.env.port || process.env.PORT  ,function(a){
-// app.listen(3000, '127.0.0.1',function(a){
+// app.listen(process.env.port || process.env.PORT  ,function(a){
+app.listen(3000, '127.0.0.1',function(a){
     console.log("server started");
 });
