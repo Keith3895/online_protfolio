@@ -25,7 +25,7 @@ var projects=[{
 		+"human effort, time consumption and paper work involved in carrying out "
 		+"the above mentioned activities without automation or computarization. ",
 	link:"Grad-bunker",
-	link_a:"/demo/"
+	link_a:"https://intense-tor-77138.herokuapp.com/"
 },
 {
 	Title: "Grad Bunker App",
