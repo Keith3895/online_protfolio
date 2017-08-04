@@ -95,12 +95,7 @@ var currentPageIndex = 0;
 
     if (is_mobile != true) {
         //Conditional script here
-
-      
-
-
-		
-$( document ).ready(function() {
+		$( document ).ready(function() {
 			$("body").scrollsteps({
 				up: prev,
 				down: next
@@ -117,8 +112,7 @@ $( document ).ready(function() {
 			$(".fullScreenPage").css("height",pageHeight);
 			pageScroll();
 		});  
-
-	console.log("not for phone");        
+		console.log("not for phone");        
     }else{
     	$('.fullScreenPage').removeClass('fullScreenPage');
     }

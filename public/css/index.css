@@ -102,43 +102,6 @@ h2{
 .chart-legend{
 	float:left; font-size: 1.5em;
 }
-@media only screen and (max-width: 760px) {
-  .d{
-		display: none;
-	}
-	.fullScreenPage {
-		height: 100%;
-		margin: 0;
-		width: 100%;
-		position: relative;
-	}
-	body{
-		overflow: visible;
-	}
-	/*.chart-legend{
-		font-size: .7em;
-	}*/
-	#prof-img{
-		display: block;
-		z-index: 1;
-		margin-right: 0%;
-	}
-	.reveal{
-		width: 100%;
-		height: auto;
-	}
-}
-
-
-
-
-
-
-#section03{
-  /*position: relative;*/
-  /*top: 550px;*/
-}
-
 #section03 a {
   padding-top: 60px;
 }
@@ -182,6 +145,10 @@ h2{
   animation: sdb03 3s infinite;
   box-sizing: border-box;
 }
+.chart-legend{
+  color: white;
+}
+
 @-webkit-keyframes sdb03 {
   0% {
     opacity: 0;
@@ -236,3 +203,37 @@ h2{
 }
 
 
+@media only screen and (max-width: 760px) {
+  .d{
+    display: none;
+  }
+  .fullScreenPage {
+    height: 100%;
+    margin: 0;
+    width: 100%;
+    position: relative;
+  }
+  body{
+    overflow: visible;
+  }
+  /*.chart-legend{
+    font-size: .7em;
+  }*/
+  #prof-img{
+    display: block;
+    z-index: 1;
+    margin-right: 0%;
+  }
+  .reveal{
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+@media (min-width: 992px)
+{
+  .col-md-offset-3{
+    margin-left: 20%;
+  }
+}
