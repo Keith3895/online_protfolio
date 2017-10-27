@@ -44,7 +44,7 @@ var projects=[{
 {
 	Title: "Phenobot: A Chatbot for Event Management using Bot Framework and LUIS.",
 	Image: "./img/chat1.jpg",
-	Description:"This project was developed as a final year project submitions along with my team of ****** . The chatbot was created to respond to particular commands and questions related to event Management, particularly related to the website festmamu.tk. The bot was beveloped on NodeJS, using the bot framework and LUIS as its NLP.",
+	Description:"This project was developed as a final year project submitions along with my team. The chatbot was created to respond to particular commands and questions related to event Management, particularly related to the website festmamu.tk. The bot was beveloped on NodeJS, using the bot framework and LUIS as its NLP.",
 	link:"Pheno_bot",
 	link_a:"Pheno-Bot"
 },
