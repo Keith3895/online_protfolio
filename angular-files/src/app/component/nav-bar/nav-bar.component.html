@@ -1,0 +1,38 @@
+<header class="cd-header" [ngClass]="{'nav-is-visible':cd_headerStatus}">
+
+  <a  class="cd-logo">
+    
+    <blockquote id="page_id">
+      Home.
+    </blockquote>
+  </a>
+  <a  class="cd-3d-nav-trigger" (click)='cd_headerStatus=!cd_headerStatus;'>
+    Menu
+    <span></span>
+  </a>
+</header> <!-- .cd-header -->
+<nav class="cd-3d-nav-container" [ngClass]="{'nav-is-visible':cd_headerStatus}">
+  <ul class="cd-3d-nav">
+    <li [ngClass]="{'cd-selected':cd_selectedStatus}">
+      <a (click) = 'cd_selectedStatus=true;' >Home</a>
+    </li>
+
+    <li>
+      <a >Projects</a>
+    </li>
+
+    <li>
+      <a >Blog</a>
+    </li>
+
+    <li>
+      <a >About</a>
+    </li>
+
+    <li>
+      <a >Contact</a>
+    </li>
+  </ul> <!-- .cd-3d-nav -->
+
+  <span class="cd-marker color-1"></span>	
+</nav> <!-- .cd-3d-nav-container -->
