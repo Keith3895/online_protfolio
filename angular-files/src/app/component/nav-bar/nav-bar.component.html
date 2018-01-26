@@ -13,26 +13,10 @@
 </header> <!-- .cd-header -->
 <nav class="cd-3d-nav-container" [ngClass]="{'nav-is-visible':cd_headerStatus}">
   <ul class="cd-3d-nav">
-    <li [ngClass]="{'cd-selected':cd_selectedStatus}">
-      <a (click) = 'cd_selectedStatus=true;' >Home</a>
-    </li>
-
-    <li>
-      <a >Projects</a>
-    </li>
-
-    <li>
-      <a >Blog</a>
-    </li>
-
-    <li>
-      <a >About</a>
-    </li>
-
-    <li>
-      <a >Contact</a>
+    <li [ngClass]="{'cd-selected':cd_selectedStatus[i]}" *ngFor="let element of list;let i = index;">
+      <a (click) = 'select(i)' >{{element}}</a>
     </li>
   </ul> <!-- .cd-3d-nav -->
 
-  <span class="cd-marker color-1"></span>	
+  <span class="cd-marker color-1" [ngStyle]="{'left':calculate()}"></span>	
 </nav> <!-- .cd-3d-nav-container -->
