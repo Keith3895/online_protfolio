@@ -2,11 +2,11 @@
 
   <a  class="cd-logo">
     
-    <blockquote id="page_id">
-      Home.
-    </blockquote>
+    <!-- <blockquote id="page_id">
+      Keith Franklin Jathanna
+    </blockquote> -->
   </a>
-  <a  class="cd-3d-nav-trigger" (click)='cd_headerStatus=!cd_headerStatus;'>
+  <a  class="cd-3d-nav-trigger" (click)="cd_headerStatus=!cd_headerStatus; pubsub.$pub('navTrigger',cd_headerStatus)">
     Menu
     <span></span>
   </a>
@@ -14,7 +14,7 @@
 <nav class="cd-3d-nav-container" [ngClass]="{'nav-is-visible':cd_headerStatus}">
   <ul class="cd-3d-nav">
     <li [ngClass]="{'cd-selected':cd_selectedStatus[i]}" *ngFor="let element of list;let i = index;">
-      <a (click) = 'select(i)' >{{element}}</a>
+      <a (click) = "select(i);cd_headerStatus=!cd_headerStatus; pubsub.$pub('navTrigger',cd_headerStatus)" routerLink="/{{element}}" >{{element}}</a>
     </li>
   </ul> <!-- .cd-3d-nav -->
 

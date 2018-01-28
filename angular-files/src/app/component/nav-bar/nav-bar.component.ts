@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {PubSubService} from '../../service/pub-sub/pub-sub.service'
 @Component({
   selector: 'app-nav-bar',
   templateUrl: './nav-bar.component.html',
@@ -11,7 +11,7 @@ export class NavBarComponent implements OnInit {
   list=['Home','Projects','Blog','About','contact'];
   cd_selectedStatus = [];
   current=0;
-  constructor() { }
+  constructor(private pubsub : PubSubService) { }
 
   ngOnInit() {
     this.cd_selectedStatus = this.list.map(el=>{
@@ -34,4 +34,5 @@ export class NavBarComponent implements OnInit {
       this.cd_selectedStatus[this.current] = true;
     }
   }
+  
 }

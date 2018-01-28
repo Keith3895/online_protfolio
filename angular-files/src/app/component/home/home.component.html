@@ -1,5 +1,8 @@
-<app-nav-bar></app-nav-bar>
 
-<p>
-  home works!
-</p>
+<div fxLayout= 'column' class="ProjectActive">
+<app-nav-bar style="width:100%"></app-nav-bar>
+
+<main [ngClass]="{'nav-is-visible':navVis}">
+<router-outlet style="width:100%"></router-outlet>
+</main>
+</div>

@@ -442,7 +442,7 @@ main {
     -o-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden
+    backface-visibility: hidden;
 }
 
 main h1 {
@@ -502,3 +502,4 @@ h1 {
         margin: 2em auto
     }
 }
+

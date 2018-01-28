@@ -1,0 +1,11 @@
+<div fxLayout="row" fxLayout.xs="column">
+  <div fxFlex="50" fxFlex.xs='100'>
+    <canvas baseChart [data]="doughnutChartData" [labels]="doughnutChartLabels" [colors]="doughnutChartColors" [chartType]="doughnutChartType"
+      (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+
+  <div fxFlex="50" fxFlex.xs='100'>
+    <canvas baseChart [data]="polarAreaChartData" [labels]="polarAreaChartLabels" [legend]="polarAreaLegend" [chartType]="polarAreaChartType"
+      [colors]="polarAreaChartColor" (chartHover)="chartHovered($event)" (chartClick)="chartClicked($event)"></canvas>
+  </div>
+</div>

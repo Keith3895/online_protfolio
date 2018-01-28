@@ -1,0 +1,54 @@
+<h1> The different projects worked on.</h1>
+<div class="prallax" fxLayout = 'column'>
+  <div *ngFor="let project of projects">
+    <div class="bg__foo"></div>
+    <div class="bg__bar" fxLayout = 'column'>
+      <h1 class="title">{{project.Title}}</h1>
+      <div fxLayout = 'row' fxLayoutWrap>
+        <div class="col-md-offset-1 col-md-3 col-xs-6" fxFlex='30' fxFlex.xs='60'>
+          <img class="responsive" src="{{project.Image}}">
+        </div>
+        <div class="col-md-offset-1 col-md-6" fxFlex='60' >
+          <p class="Project_description">{{project.Description}}</p>
+        </div>
+      </div>
+      <div fxLayout = 'row'  fxLayoutAlign="space-around" style="margin-top:20px;">
+          <a target="_blank" href="/blog/{{project.link}}" class="readMore  link_class">Read More</a>
+          <a target="_blank" href="{{project.link_a}}" class="demo link_class">Demo </a>
+          <a target="_blank" href="https://github.com/Keith3895/{{project.link}}" class="code link link_class">
+            Code link</a>
+        </div>
+    </div>
+  </div>
+</div>
+<div class="bg__foo_full">
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h1 style="font-weight: 300">Modules for the different projects</h1>
+      <div class="row">
+        <div class="col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-1">
+          <div class="card">
+            <div class="card-content">
+              <h1>file Upload to aws</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-1">
+          <div class="card">
+            <div class="card-content">
+              <h1>Authenthication with PassportJS</h1>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4 col-xs-8 col-xs-offset-2 col-md-offset-1">
+          <div class="card">
+            <div class="card-content">
+              <h1>WordPress theme</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="mob"></div>

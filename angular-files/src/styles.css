@@ -1,3 +1,5 @@
 body{
-    background: #212635;
+    background-color: #212635 !important;
+    font-family: "Open Sans",sans-serif;
+    color:white;
 }

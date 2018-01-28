@@ -1,0 +1,46 @@
+<div fxLayout="column">
+  <!-- <h1 style="margin-top: 1em" fxFlex='100'>Projects Worked On</h1> -->
+  <div fxLayout="row" fxLayoutWrap fxLayout.xs="column">
+    <div class="col-md-3 col-sm-3" fxFlex="30" fxFlex.xs="100">
+
+      <input type="radio" id="radio-front" name="select-face" [checked]='rG[0].status' (click)="changeCube(0)"/>
+      <input type="radio" id="radio-1" name="select-face" [checked]='rG[1].status' (click)="changeCube(1)"/>
+      <input type="radio" id="radio-2" name="select-face" [checked]='rG[2].status' (click)="changeCube(2)"/>
+      <input type="radio" id="radio-3" name="select-face" [checked]='rG[3].status' (click)="changeCube(3)"/>
+      <input type="radio" id="radio-4" name="select-face" [checked]='rG[4].status' (click)="changeCube(4)"/>
+      <input type="radio" id="radio-5" name="select-face" [checked]='rG[5].status' (click)="changeCube(5)"/>
+
+      <div class="separator"></div>
+      <div class="space3d">
+        <div class="_3dbox">
+          <a>
+            <div class="_3dface _3dface--front"></div>
+          </a>
+          <a>
+            <div class="_3dface _3dface--top"></div>
+          </a>
+          <a>
+            <div class="_3dface _3dface--bottom"></div>
+          </a>
+          <a>
+            <div class="_3dface _3dface--left"></div>
+          </a>
+          <a>
+            <div class="_3dface _3dface--right"></div>
+          </a>
+          <a>
+            <div class="_3dface _3dface--back"></div>
+          </a>
+        </div>
+      </div>
+      <div class="separator"></div>
+    </div>
+    <div fxFlex="70" fxFlex.xs="100">
+        
+      <div class="project-description">
+          <h4> {{rG[curr].title}} </h4>
+        {{rG[curr].description}}
+      </div>
+    </div>
+  </div>
+</div>
